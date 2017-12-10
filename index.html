@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>starwars</title>    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-8" id="div-gamearea">
+				
+				<div class="row" id="div-messageboard">
+					<h2></h2>
+				</div>
+				<div class="row" id="div-myplayerarea">
+					<div class="col-md-4-offset-4" id=div-myplayer>
+					  	
+					</div>
+					<div class="col-md-4-offer-8" id="div-myplayercontrol">
+						<h2>Score: <span class="label label-default" id="h2-score"></span></h2>
+						<button type="button" class="btn btn-primary" id="btn-attack">Attack</button>
+					  	
+					</div>
+					
+				</div>
+				<div class="row" id="div-allplayers">
+					
+				</div>
+				<div class="row" id="div-oppplayer">
+					
+				</div>
+				<div class="row" id="div-oppstandbyplayer">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/javascript/starwars-players.js"></script>
+	<script type="text/javascript" src="assets/javascript/starwars-main.js"></script>
+	<script type="text/javascript" src="assets/javascript/starwars-wrapper.js"></script>
+</body>
+</html>

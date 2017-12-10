@@ -1,0 +1,27 @@
+body {
+    background-image: url("../images/starwars_background.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+}
+/*
+#div-messageboard{
+    background-color: red;
+}
+
+#div-myplayerarea{
+    background-color: blue;
+}
+
+#div-allplayers{
+    background-color: yellow;
+}
+
+#div-oppplayer{
+    background-color: white;
+}
+
+#div-oppstandbyplayer{
+    background-color: grey;
+}
+*/

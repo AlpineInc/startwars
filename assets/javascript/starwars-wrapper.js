@@ -8,9 +8,11 @@ $(document).ready(function() {
     han.initialize("han", "assets/images/han.png", "8", "100");
     var darth = new Player();
     darth.initialize("darth", "assets/images/darth.png", "5", "100");
+	var anakin = new Player();
+    anakin.initialize("anakin", "assets/images/anakin.png", "5", "100");
 
     var starwars = new Starwars();
-    starwars.initialize([yoda, boba, han, darth]);
+    starwars.initialize([yoda, boba, han, darth, anakin]);
     starwars.newGame();
 
     $(document).on("click", ".players", function() {
@@ -26,6 +28,7 @@ $(document).ready(function() {
         boba.initialize("boba", "assets/images/boba.png", "10", "100");
         han.initialize("han", "assets/images/han.png", "8", "100");
         darth.initialize("darth", "assets/images/darth.png", "5", "100");
+        anakin.initialize("anakin", "assets/images/anakin.png", "5", "100");
         starwars.newGame();
     });
 

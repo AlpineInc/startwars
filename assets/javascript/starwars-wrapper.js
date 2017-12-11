@@ -13,19 +13,20 @@ $(document).ready(function() {
     starwars.initialize([yoda, boba, han, darth]);
     starwars.newGame();
 
-
     $(document).on("click", ".players", function() {
         starwars.onClickPlayer(this);
-
     });
 
     $("#btn-attack").on("click", function() {
         starwars.onAttack();
-
     });
 
-
-
-
+    $("#btn-reset").on("click", function() {
+        yoda.initialize("yodo", "assets/images/yoda.png", "6", "100");
+        boba.initialize("boba", "assets/images/boba.png", "10", "100");
+        han.initialize("han", "assets/images/han.png", "8", "100");
+        darth.initialize("darth", "assets/images/darth.png", "5", "100");
+        starwars.newGame();
+    });
 
 });

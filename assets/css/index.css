@@ -4,6 +4,17 @@ body {
     background-size:cover;
     color:white;
 }
+
+.card{
+    width: 6rem;
+    color: black;
+    text-align: center;
+}
+
+img{
+    height: 6rem;
+}
+
 /*
 #div-messageboard{
     background-color: red;

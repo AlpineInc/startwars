@@ -1,23 +1,17 @@
 $(document).ready(function() {
 
     var yoda = new Player();
-    yoda.initialize("yodo", "assets/images/yoda.png", "6", "100", null);
+    yoda.initialize("yodo", "assets/images/yoda.png", "6", "100");
     var boba = new Player();
-    boba.initialize("boba", "assets/images/boba.png", "10", "100", null);
+    boba.initialize("boba", "assets/images/boba.png", "10", "100");
     var han = new Player();
-    han.initialize("han", "assets/images/han.png", "8", "100", null);
+    han.initialize("han", "assets/images/han.png", "8", "100");
     var darth = new Player();
-    darth.initialize("darth", "assets/images/darth.png", "5", "100", null);
+    darth.initialize("darth", "assets/images/darth.png", "5", "100");
 
     var starwars = new Starwars();
     starwars.initialize([yoda, boba, han, darth]);
     starwars.newGame();
-
-
-    $(".players").on("click", ".fClick", function() {
-        starwars.onClickPlayer(this);
-
-    });
 
 
     $(document).on("click", ".players", function() {
